@@ -9,33 +9,110 @@
 </head>
 <body>
     <header>
-        <img src="./assets/day33-pumpkin-removebg-preview.png" alt="logo calabaza" class="header_logo">
+        <img src="./assets/calabaza.png" alt="logo calabaza" class="header_logo">
         <nav class="navbar">
-            <ul class="navbar_list">
+            <ul class=" flex navbar_list">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#cards">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <img src="./assets/day5-vault-removebg-preview.png" alt="logo carrito" class="navbar_cart">
         </nav>
+        <label for="cart-toggle" class="cart-label">
+            <img src="./assets/carrito.png" alt="logo carrito" class="navbar_cart">
+        </label>
+        <input type="checkbox" id="cart-toggle" />
     </header>
 
     <main>
        <section id="hero">
-            <div class="hero_info">
-                <h1><span>Calabadreani</span>, tus envíos mas aterradores estan en nuestras manos.🎃</h1>
+            <div class="flex hero_info ">
+                <h1>Calabadreani, tus envíos mas aterradores..🎃</h1>
                 <p>Somos una empresa de logística, que únicamente trabajamos el día 31 de Octubre. Nuestro trabajo se basa en enviar tus dulces a <span>todo el mundo</span>, con un mensajero disfrazado de monstruo!</p>
-                <a href="#">Realizar envío</a>
+                <a href="#" class="flex">Realizar envío</a>
             </div>
-            <img src="./assets/day14-forklift-removebg-preview.png" alt="" class="hero_img">
+            <div class="flex hero_card">
+                <div class="flex hero_card-box">
+                    <img src="./assets/products/fangster.png" alt="" class="hero_card-img">
+                    <div class="hero_card-middle">
+                        <h3>Mosntruo Preferido..</h3>
+                        <span>10</span>
+                    </div>
+                    <div class="hero_card-bottom">
+                        <img src="./assets/creator.png" alt="">
+                        <div class="hero_card-bottom__box">
+                            <p>Nombre</p>
+                            <p>Bicho Gomez</p>
+                        </div>
+                        <div class="hero_card-bottom__box">
+                            <p>Precio</p>
+                            <p>4 AR$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
        </section>
        <section id="about">
             <div class="about_info">
-                <h2>¿Cómo funcionan nuestros envios?</h2>
-                <p>Nuestros envios comienzan retirando el paquete en la puerta de tu casa, y termina en el momento que el destinatario recibe su paquete aterrador! Trabajamos en todo Argentina y hacemos envios a todo el mundo. 🪐 </p>
-                <p>Lo mejor de todo es que pagando con Tarjeta Banco Piringundito tenes hasta 36 cuotas sin interés, y asi con la inflación que tenemos se te licuan todas las cuotas! ¿Existe algo mas aterrador que eso?</p>
+                <div class="about_info-title">
+                    <h2>¿Cómo funcionan nuestros envios?</h2>
+                </div>
+                <div class="about_info-descrp flex">
+                    <p>Nuestros envios comienzan retirando el paquete en la puerta de tu casa, y termina en el momento que el destinatario recibe su paquete aterrador! Trabajamos en todo Argentina y hacemos envios a todo el mundo.</p>
+                    <a href="#" class="flex" >Contratanos</a>
+                </div>
+            </div>
+            <div class="flex about_info-img">
+                <img src="./assets/products/cuteshiba.png" alt="">
+                <img src="./assets/products/cutemonkey.png" alt="">
+                <img src="assets/products/daovinci.png" alt="">
+            </div>
+       </section>
+       <section id="cards">
+            <div class="cards_descrp">
+                <h2>Que brindamos nosotros?</h2>
+                <p>Con nosotros podes escoger entre que tan aterrador puede ser tu envío, y cual es el peso del paquete que deseas enviar.</p> 
+            </div>
+            <div class="flex cards_container">
+                <div class="card_box">
+                    <img src="./assets/info-icon.png" alt="Icono NFTs" />
+                    <h3 class="card_title">Envio rapido</h3>
+                    <p class="card_benefit">El paquete llega a la velocidad de la luz en una nave espacial</p>
+                </div>
+                <div class="card_box">
+                    <img src="./assets/info-icon.png" alt="Icono NFTs" />
+                    <h3 class="card_title">No importa el peso!</h3>
+                    <p class="card_benefit">No importa cuantas toneladas tenga el paquete, nosotros nos ocupamos que llegue</p>
+                </div>
+                <div class="card_box">
+                    <img src="./assets/info-icon.png" alt="Icono NFTs" />
+                    <h3 class="card_title">Muuuy barato</h3>
+                    <p class="card_benefit">La inflacion esta en tu cabeza, asi que si pagas en cuotas no pasa nada.</p>
+                </div>
+            </div>
+       </section>
+       <section id="contact">
+            <div class="contact_info">
+                <h2>Conctactanos</h2>
+                <label for="mail" class="mail_contact">Cual es tu mail?</label>
+                <input type="email" id="mail">
+                <label for="mensaje" class="mensaje_contact">Cual es tu pedido?</label>
+                <input type="text" id="mensaje">
+            </div>
+            <div class="contact_img">
+                <img src="./assets/products/sherbet.png" alt="">
             </div>
        </section>
     </main>
+    <footer>
+        <div>
+          <ul class="footer-links">
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Trabajá con Nosotros</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+        <p>Hecho con ❤️ por <span>Mauri</span></p>
+      </footer>
 </body>
 </html>
